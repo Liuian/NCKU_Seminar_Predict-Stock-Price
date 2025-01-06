@@ -46,25 +46,8 @@ Several factors affect trading return rates:
 ### Performance Comparison:
 **Golden Cross > Random Forest > LSTM**
 
----
 
-## Coding Log - Errors and Solutions:
-
-### Standardizing Data:
-```python
-from sklearn.preprocessing import MinMaxScaler
-
-# Standardize the dataset
-scaler = MinMaxScaler(feature_range=(0, 1))
-scaled_data = scaler.fit_transform(Data)
-
-# Reverse the scaling for predictions
-trainPredict = scaler.inverse_transform(trainPredict.reshape(-1, 1))
-testPredict = scaler.inverse_transform(testPredict.reshape(-1, 1))
-```
-
-
-## 實作方法總結
+# 實作方法總結
 原始資料：從investing.com抓csv檔；元大0050；Period: January 1, 2014, to November 4, 2023。
 
 1. Goldencross:
@@ -91,40 +74,12 @@ testPredict = scaler.inverse_transform(testPredict.reshape(-1, 1))
    - Golden Cress 長均線、短均線：5, 20  
 
 5. 結論：以下幾種情況都會影響交易的回報率
-
-
+   
    - 不同時間區間
    - 不可以看到未來的資料random forest
    - 嘗試優化參數
    - Golden cross > random forest > random forest  
 
 
-
-## coding紀錄-error
-標準化資料
-scaler = MinMaxScaler(feature_range=(0, 1))
-scaled_Data = scaler.fit_transform(Data)
-...
-反標準化預測結果
-trainPredict = scaler.inverse_transform(trainPredict.reshape(-1, 1))
-testPredict = scaler.inverse_transform(testPredict.reshape(-1, 1))
-
-ValueError: non-broadcastable output operand with shape (1913,1) doesn't match the broadcast shape(1913,6)
-因為scaler 同時紀錄了6個feature的轉換
-
-改成 
-from sklearn.preprocessing import MinMaxScaler
-假設Data是包含六個特徵的資料框
-features = ['Price', 'Open', 'High', 'Low', 'Vol.', 'Change %']
-X = Data[features]
-初始化MinMaxScaler
-scalers = {}
-對每個特徵獨立進行縮放
-for feature in features:
-    scaler = MinMaxScaler(feature_range=(0, 1))
-    X[feature] = scaler.fit_transform(X[[feature]])
-    scalers[feature] = scaler
-X現在包含獨立縮放後的每個特徵的值
-X_array = X.values
 
 
