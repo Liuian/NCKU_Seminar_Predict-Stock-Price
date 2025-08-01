@@ -2,6 +2,13 @@
 
 This project investigates the use of technical analysis and machine learning to predict stock prices, using Yuanta 0050 (元大0050) as case studies. It was originally developed for a university seminar, and later extended with Explainable AI (XAI) methods such as SHAP to improve model transparency and interpretability.
 
+## 🚀 Project Highlights
+
+- Forecasts ETF (0050) price trends using both Machine Learning (Random Forest) and Deep Learning (LSTM).
+- Incorporated S&P 500 index as a feature to enhance model accuracy.
+- Compared model performance across multiple timeframes.
+- Achieved improved directional prediction vs baseline methods.
+
 ---
 ## 📑 Outline
 
@@ -25,9 +32,19 @@ This project investigates the use of technical analysis and machine learning to 
 
 | Folder          | Description |
 |-----------------|-------------|
-| `original/`     | Original work submitted during the NCKU Machine Learning Seminar (Golden Cross, Random Forest, LSTM) |
-| `xai_extension/`| Post-course extension for explainability using SHAP |
-| `assets/`       | Figures, report materials, and supporting documents |
+| `code/`            | Jupyter notebooks and scripts implementing machine learning models such as Golden Cross, Random Forest, and LSTM          |
+| `data/`            | Dataset files including ETF and S&P 500 historical price data    |
+| `literature/`      | Related academic papers and references                           |
+| `report_final/`    | Final project deliverables: reports, presentations, and posters  |
+| `report_meetings/` | Meeting notes and related documents                              |
+| `report_monthly_1/`| Files for the first monthly report including videos and slides   |
+| `report_monthly_2/`| Files for the second monthly report including videos and slides  |
+| `report_monthly_3/`| Files for the third monthly report including videos and slides   |
+| `report_proposal/` | Project proposal documents and presentations                     |
+| `final_poster.jpg` | Final poster image                                               |
+| `note.md`          | Personal or project notes                                        |
+| `readme.md`        | Project overview and instructions                                |
+| (plan)`xai_extension/`| Post-course extension for explainability using SHAP |
 
 ---
 
