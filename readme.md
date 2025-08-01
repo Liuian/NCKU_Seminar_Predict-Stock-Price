@@ -161,7 +161,7 @@ Created by [Liuian](https://github.com/Liuian)
 
 This project was also presented as a course-end poster in the NCKU Machine Learning Seminar (2023). The poster summarizes the objectives, methods, and key findings of the work.
 
-![Final Poster](https://github.com/Liuian/predict-stock-price_independent-study_NCKU/blob/main/%E4%B8%8D%E5%88%86%E7%B3%BB%E5%B0%88%E9%A1%8C%E6%B5%B7%E5%A0%B1_page-0001.jpg)
+![Final Poster](https://github.com/Liuian/predict-stock-price_independent-study_NCKU/blob/main/final_poster.jpg)
 
 ---
 
