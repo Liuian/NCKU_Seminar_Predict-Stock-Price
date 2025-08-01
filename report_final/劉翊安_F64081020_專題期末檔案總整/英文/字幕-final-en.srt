@@ -1,0 +1,180 @@
+1
+00:00:00,000 --> 00:00:09,000
+Hello everyone, I am Liu Yian from the Department of CCEP at National Cheng Kung University.
+
+2
+00:00:09,000 --> 00:00:16,000
+Today I will be introducing the project I have been working on in this semester in the department.
+
+3
+00:00:16,000 --> 00:00:20,000
+The focus of my project is related to stock market trending.
+
+4
+00:00:20,000 --> 00:00:24,000
+This project is closely related to data science methods.
+
+5
+00:00:24,000 --> 00:00:31,000
+Due to time constraints,you can find more detailed information on the data craft explorer channel.
+
+6
+00:00:31,000 --> 00:00:35,000
+The specifics will be provided in the description below.
+
+7
+00:00:35,000 --> 00:00:39,000
+Interested friends are welcome to check it out.
+
+8
+00:00:39,000 --> 00:00:47,000
+While engaging in stock market operations,I noticed three commonly used methods for prediction and trading.
+
+9
+00:00:47,000 --> 00:00:58,000
+I began contemplating the idea of combining these three methods to potentially achieve better trending returns.
+
+10
+00:00:58,000 --> 00:01:01,000
+This led to the development of my project.
+
+11
+00:01:01,000 --> 00:01:11,000
+The content of my presentation today follows the structure from top to bottom and indicated by the gray and blue boxes.
+
+12
+00:01:11,000 --> 00:01:13,000
+Let's dive into it.
+
+13
+00:01:13,000 --> 00:01:21,000
+Since my final project poster is quite lengthy,I'll divide the introduction into two parts.
+
+14
+00:01:21,000 --> 00:01:30,000
+Starting with the blue box on the right,I obtained test data for popular target among young investors.
+
+15
+00:01:30,000 --> 00:01:42,000
+Taiwan Yuan Da Wushu,005 Liro,and ETF encompassing the top 50 companies in Taiwan.
+
+16
+00:01:42,000 --> 00:01:51,000
+Due to its representation of the overall economy growth in Taiwan,it's a favorite investment trace.
+
+17
+00:01:51,000 --> 00:02:14,000
+The data used spans from January 2014 to November 2023,and includes daily trending information such as closing and opening prices,daly highs,lowes,trending volume,and percentage price changes compared to the previous day.
+
+18
+00:02:14,000 --> 00:02:22,000
+I transformed this data into a turn chart,as seen in the rightmost white chart.
+
+19
+00:02:22,000 --> 00:02:27,000
+The overall term suggests an upward trajectory.
+
+20
+00:02:27,000 --> 00:02:36,000
+Now,let's live into three common stock market trending strategies I exploited.
+
+21
+00:02:36,000 --> 00:02:42,000
+The first one is golden core strategy.Premily based on moving average.
+
+22
+00:02:42,000 --> 00:03:01,000
+Flooming average is a point that among the past 20 day stock price average is today's point,and we create a line in the chart.
+
+23
+00:03:01,000 --> 00:03:08,000
+So,I chose a 20 day long term moving average and 5 day short term moving average.
+
+24
+00:03:08,000 --> 00:03:14,000
+The intersection of this average serves as an entry and is it praying for trading.
+
+25
+00:03:14,000 --> 00:03:27,000
+The initial result over 10 year period from 2014 to 2023,yielding a total return rate of 62.48%.
+
+26
+00:03:27,000 --> 00:03:32,000
+Demonstrating favorable trending outcomes.
+
+27
+00:03:32,000 --> 00:03:43,000
+The second strategy on the bottom is a random forest,a machine learning method that uses past data predict future stock prices.
+
+28
+00:03:43,000 --> 00:03:54,000
+The result shows an impressive accuracy with an R2 score of 0.999,indicating highly precise prediction.
+
+29
+00:03:54,000 --> 00:04:06,000
+By the way,the lowest accuracy of R2 score is 0 and the highest is 1,so that 0.999 which is really high.
+
+30
+00:04:06,000 --> 00:04:17,000
+And the predict and actual price is at the chart in the most left button.
+
+31
+00:04:17,000 --> 00:04:24,000
+You can see that this two line is very close,so that you think it is only a one line.
+
+32
+00:04:24,000 --> 00:04:34,000
+And which shows that the predict result is very close to the actual price.
+
+33
+00:04:34,000 --> 00:04:46,000
+Ok,the third strategy involves long short term memory,which as known as LSTM,which unlike random forest,
+
+34
+00:04:46,000 --> 00:05:00,000
+consider only historical data for predicting stock prices,while slightly less accurate than random forest with an R2 score of 0.95.
+
+35
+00:05:00,000 --> 00:05:07,000
+Again,the lowest accuracy for R2 score is 0,and the highest is 1.
+
+36
+00:05:07,000 --> 00:05:14,000
+So LSTM still demonstrate good predictive capabilities.
+
+37
+00:05:14,000 --> 00:05:28,000
+Moving on to the integration of these strategies at the blue block,I explore combining the golden core strategy with LSTM and random forest.
+
+38
+00:05:28,000 --> 00:05:36,000
+The cumulative returns from these combined strategies were analyzed,revealing interesting insights.
+
+39
+00:05:36,000 --> 00:05:50,000
+Golden core contributed possibility,while LSTM show unexpected negative return,which is at the last row.
+
+40
+00:05:50,000 --> 00:06:02,000
+You can see that the golden core return is 4.5,and LSTM return is -2.5.
+
+41
+00:06:02,000 --> 00:06:09,000
+Random forest return is 3.7.
+
+42
+00:06:09,000 --> 00:06:20,000
+This discrepancy might be attributed to the specific time interval chosen for the analysis.
+
+43
+00:06:20,000 --> 00:06:33,000
+So in conclusion,the future work involves testing these strategies across different time intervals to obtain a comprehensive understanding of their effectiveness.
+
+44
+00:06:33,000 --> 00:06:43,000
+This project provides a foundation of potential improvements in trending accounts by integrating various prediction methods.
+
+45
+00:06:43,000 --> 00:06:52,000
+So this is all of my content. Thank you for your attention.
+
